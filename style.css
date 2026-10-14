@@ -1,0 +1,174 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #eeeeee;
+    color: #292929;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border: 2px solid #333333;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #cccccc;
+}
+
+header {
+    text-align: center;
+    padding: 15px 5px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #666666;
+}
+
+.game-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.game-info p {
+    margin: 0;
+    padding: 12px 5px;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main {
+    padding: 25px;
+    background: #f7f7f7;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    line-height: 1.7;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.question {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.answer-button,
+button {
+    padding: 12px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background: #333333;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.answer-button {
+    background: #ffffff;
+    color: #292929;
+    text-align: left;
+}
+
+.answer-button:hover {
+    background: #e5e5e5;
+}
+
+.answer-button.selected {
+    background: #dddddd;
+    border: 2px solid #222222;
+}
+
+button:hover {
+    background: #555555;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.main-button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.feedback {
+    padding: 12px;
+    margin-top: 15px;
+    background: #eeeeee;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.progress-text {
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #777777;
+    font-size: 13px;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .game-container {
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .game-info {
+        gap: 5px;
+    }
+
+    .game-info p {
+        font-size: 12px;
+    }
+
+    .answers {
+        grid-template-columns: 1fr;
+    }
+}
